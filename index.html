@@ -387,7 +387,19 @@ Kami harap irfanweb.com dapat membantu Anda dalam mendapatkan informasi wisata y
 </article>
 
 </section>
-
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "657cb7d6-5c1b-46b0-bc79-1b9b90fcf4f1", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "218a9504-261a-4f73-863a-7349e02b2f55", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
 </body>
 
 </html>
